@@ -17,7 +17,7 @@ module.exports = {
         defaultLocale: 'zh-cn',
         locales: ['en', 'zh-cn'],
     },
-    onBrokenLinks: 'throw',
+    onBrokenLinks: 'log',
     onBrokenMarkdownLinks: 'warn',
     favicon: 'img/logo.png',
     organizationName: 'qber-soft', // Usually your GitHub org/user name.
