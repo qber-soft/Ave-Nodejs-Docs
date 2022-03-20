@@ -30,11 +30,10 @@ module.exports = {
             theme: require('prism-react-renderer/themes/vsDark'),
         },
         navbar: {
-            title: '',
+            title: 'Avernakis',
             logo: {
-                alt: 'Avernakis UI',
-                src: 'img/Ave-github-banner-light.svg',
-                srcDark: 'img/Ave-github-banner-dark.svg',
+                alt: 'Avernakis',
+                src: 'img/Ave.svg',
             },
             items: [
                 // {
