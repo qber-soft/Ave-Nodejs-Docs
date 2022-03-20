@@ -19,12 +19,12 @@ module.exports = {
     },
     onBrokenLinks: 'log',
     onBrokenMarkdownLinks: 'warn',
-    favicon: 'img/logo.png',
+    favicon: 'img/Ave.svg',
     organizationName: 'qber-soft', // Usually your GitHub org/user name.
     projectName: 'ave-ui', // Usually your repo name.
     themeConfig: {
         colorMode: {
-            disableSwitch: true,
+            disableSwitch: false,
         },
         prism: {
             theme: require('prism-react-renderer/themes/vsDark'),
@@ -33,7 +33,8 @@ module.exports = {
             title: '',
             logo: {
                 alt: 'Avernakis UI',
-                src: 'img/logo2.png',
+                src: 'img/Ave-github-banner-light.svg',
+                srcDark: 'img/Ave-github-banner-dark.svg',
             },
             items: [
                 // {
