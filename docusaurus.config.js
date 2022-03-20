@@ -11,8 +11,8 @@
 module.exports = {
     title: 'Avernakis',
     tagline: '',
-    url: 'https://your-docusaurus-test-site.com',
-    baseUrl: '/',
+    url: 'https://qber-soft.github.io/Ave-Nodejs-Docs/',
+    baseUrl: '/Ave-Nodejs-Docs/',
     i18n: {
         defaultLocale: 'zh-cn',
         locales: ['en', 'zh-cn'],
