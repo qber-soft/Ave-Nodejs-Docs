@@ -11,7 +11,7 @@
 module.exports = {
     title: 'Avernakis',
     tagline: '',
-    url: 'https://qber-soft.github.io/Ave-Nodejs-Docs/',
+    url: 'https://qber-soft.github.io/',
     baseUrl: '/Ave-Nodejs-Docs/',
     i18n: {
         defaultLocale: 'zh-cn',
