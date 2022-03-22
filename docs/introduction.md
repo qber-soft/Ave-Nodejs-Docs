@@ -10,7 +10,7 @@ This site is mainly about these JavaScript APIs.
 
 ## Avernakis Native
 
-[Avernakis C++ SDK ](https://github.com/qber-soft/Ave-SDK/blob/main/README_en-us.md) is versatile，you can find demo here:[AvernakisApp.7z](https://github.com/qber-soft/Ave-SDK/releases/download/0.8.0/AvernakisApp.7z)。
+[Avernakis C++ SDK ](https://github.com/qber-soft/Ave-SDK/blob/main/README_en-us.md) is versatile，you can find demo here:[AvernakisApp.7z](https://github.com/qber-soft/Ave-SDK/releases/download/0.8.0/AvernakisApp.7z).
 
 > Download it, and then open 'Spellcaster-Gui-Image/Bin64/Test-Gui.exe'
 
