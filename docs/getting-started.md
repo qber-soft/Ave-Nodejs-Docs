@@ -88,7 +88,7 @@ window.Activate();
 
 ## Template Project {#template-project}
 
-Repo：[Ave-Nodejs-Template](https://github.com/qber-soft/Ave-Nodejs-Template)。
+Repo: [Ave-Nodejs-Template](https://github.com/qber-soft/Ave-Nodejs-Template).
 
 This template project shows how to play with a single button:
 

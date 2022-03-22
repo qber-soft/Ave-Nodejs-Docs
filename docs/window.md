@@ -14,7 +14,7 @@ import { App, WindowCreation, WindowFlag, Window } from 'ave-ui';
 const app = new App();
 globalThis.app = app;
 
-// cp：creation param
+// cp:creation param
 const cpWindow = new WindowCreation();
 cpWindow.Title = 'Window';
 cpWindow.Flag |= WindowFlag.Layered;
@@ -44,7 +44,7 @@ Run, and get this basic window:
 
 ```ts
 export interface IWindow extends IControl {
-    // callback：return true for success, or return false
+    // callback:return true for success, or return false
     OnCreateContent(callback: (sender: Window) => boolean): Window;
 
     // success: true, fail: false
@@ -73,13 +73,13 @@ export enum WindowFlag {
 }
 ```
 
-Inactive window：
+Inactive window:
 
 ![window not active](./assets/window-not-active.png)
 
 ### Transparency {#example-window-opacity}
 
-`Layered` flag controls transparency feature：
+`Layered` flag controls transparency feature:
 
 ![window opacity](./assets/window-opacity.png)
 
