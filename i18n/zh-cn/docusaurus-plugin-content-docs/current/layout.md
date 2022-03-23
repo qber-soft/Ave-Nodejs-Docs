@@ -204,6 +204,10 @@ export function main(window: Window) {
 }
 ```
 
+和 [边距](#example-grid-margin) 中的例子中类似，我们将一个蓝色矩形放在了左上角：
+
+![grid set pos](./assets/grid-set-pos.png)
+
 #### API {#set-pos-size}
 
 ```ts
@@ -220,10 +224,6 @@ export class DpiSize_2 {
     constructor(x: DpiSize, y: DpiSize);
 }
 ```
-
-和 [边距](#example-grid-margin) 中的例子中类似，我们将一个蓝色矩形放在了左上角：
-
-![grid set pos](./assets/grid-set-pos.png)
 
 ### 透明度 {#example-grid-opacity}
 

@@ -66,8 +66,8 @@ export class WindowCreation {
 
 export enum WindowFlag {
     MainWindow /**/ = 0x00000001, // program will terminate when window created with this flag closed
-    Sizable /**/ = 0x00000004, // so you can adjust the size of it
-    Minimum /**/ = 0x00000008, //
+    Sizable /**/ = 0x00000004,
+    Minimum /**/ = 0x00000008,
     Layered /**/ = 0x00000040, // enable transparency
     Default /**/ = MainWindow | Sizable | Minimum,
 }
