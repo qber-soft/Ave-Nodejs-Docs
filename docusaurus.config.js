@@ -44,13 +44,13 @@ module.exports = {
                 // },
                 {
                     type: 'doc',
-                    position: 'right',
+                    position: 'left',
                     docId: 'introduction',
                     label: 'Docs',
                 },
                 {
                     type: 'doc',
-                    position: 'right',
+                    position: 'left',
                     docId: 'components',
                     label: 'Components',
                 },
