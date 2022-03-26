@@ -66,11 +66,12 @@ module.exports = {
                 //     position: 'right',
                 // },
                 // Please keep GitHub link to the right for consistency.
-                // {
-                //   href: 'https://github.com/facebook/docusaurus',
-                //   label: 'GitHub',
-                //   position: 'right',
-                // },
+                {
+                    href: 'https://github.com/qber-soft/Ave-Nodejs',
+                    className: 'header-github-link',
+                    'aria-label': 'GitHub repository',
+                    position: 'right',
+                },
             ],
         },
         footer: {
