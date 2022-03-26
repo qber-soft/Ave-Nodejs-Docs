@@ -45,7 +45,7 @@ Usage:
 
 ![status bar basic](./assets/status-bar-basic.gif)
 
-Print clicked part index:
+Print index of clicked part:
 
 ```bash
 index: 1
