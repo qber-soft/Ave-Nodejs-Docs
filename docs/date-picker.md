@@ -69,7 +69,7 @@ export function main(window: Window) {
 }
 ```
 
-Display the last seleted date:
+Display the last selected date:
 
 ![date picker set](./assets/date-picker-set.gif)
 
