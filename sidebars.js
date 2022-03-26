@@ -8,7 +8,7 @@
  */
 
 module.exports = {
-    docs: ['introduction', 'getting-started'],
+    docs: ['introduction', 'getting-started', 'development'],
     components: [
         'components',
         'window',
