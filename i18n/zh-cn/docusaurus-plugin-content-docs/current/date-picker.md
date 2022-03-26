@@ -53,7 +53,7 @@ export interface IDatePicker extends IControl {
 
 设置日期与[日历](./calendar#example-set)中类似：
 
-```ts {8-9}
+```ts {10-11}
 import { Window, DatePicker } from 'ave-ui';
 
 export function main(window: Window) {
