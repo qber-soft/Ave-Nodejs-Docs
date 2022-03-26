@@ -3,10 +3,6 @@ id: list-box
 title: ListBox 列表框
 ---
 
-<!-- ## 简介 {#introduction}
-
-TODO：以后添加对列表框的整体介绍。 -->
-
 ## 例子 {#examples}
 
 ### 基本用法 {#example-basic}
