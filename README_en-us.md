@@ -7,8 +7,8 @@ Link: [https://qber-soft.github.io/Ave-Nodejs-Docs/en/](https://qber-soft.github
 # Getting Started
 
 -   Install：`npm install`
--   Docs in Chinese：`npm start`
--   Docs in English: `npm start -- --locale en`
+-   Docs in English: `npm start`
+-   Docs in Chinese：`npm start -- --locale zh-cn`
 -   Translations：`npm run write-translations -- --locale zh-cn`
 
 # Miscellaneous
