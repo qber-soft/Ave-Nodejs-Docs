@@ -14,7 +14,7 @@ module.exports = {
     url: 'https://qber-soft.github.io/',
     baseUrl: '/Ave-Nodejs-Docs/',
     i18n: {
-        defaultLocale: 'zh-cn',
+        defaultLocale: 'en',
         locales: ['en', 'zh-cn'],
     },
     onBrokenLinks: 'log',
@@ -61,10 +61,10 @@ module.exports = {
                 //   position: 'left',
                 // },
                 // {to: 'blog', label: 'Blog', position: 'right'},
-                // {
-                //     type: 'localeDropdown',
-                //     position: 'right',
-                // },
+                {
+                    type: 'localeDropdown',
+                    position: 'right',
+                },
                 // Please keep GitHub link to the right for consistency.
                 {
                     href: 'https://github.com/qber-soft/Ave-Nodejs',
