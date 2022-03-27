@@ -2,7 +2,7 @@
 
 This repo is the document of [Avernakis UI](https://github.com/qber-soft/Ave-Nodejs).
 
-Link: [https://qber-soft.github.io/Ave-Nodejs-Docs/en/](https://qber-soft.github.io/Ave-Nodejs-Docs/en/)
+Link: [https://qber-soft.github.io/Ave-Nodejs-Docs/](https://qber-soft.github.io/Ave-Nodejs-Docs/)
 
 # Getting Started
 
