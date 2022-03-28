@@ -31,6 +31,10 @@ module.exports = {
     organizationName: 'qber-soft', // Usually your GitHub org/user name.
     projectName: 'ave-ui', // Usually your repo name.
     themeConfig: {
+        gtag: {
+            trackingID: 'G-3FEEQ8VY7F',
+            anonymizeIP: true,
+        },
         colorMode: {
             disableSwitch: false,
         },
@@ -178,10 +182,6 @@ module.exports = {
                 // },
                 theme: {
                     customCss: require.resolve('./src/css/custom.css'),
-                },
-                gtag: {
-                    trackingID: 'UA-224050514-1',
-                    anonymizeIP: true,
                 },
             },
         ],
