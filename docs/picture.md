@@ -7,15 +7,14 @@ title: Picture
 
 ### Basic {#example-basic}
 
-```ts {6,8-9}
-import { Window, Picture, ResourceSource } from 'ave-ui';
-import * as fs from 'fs';
-import * as path from 'path';
+```ts {4-5,8}
+import { Window, Picture, ResourceSource, AppPath } from 'ave-ui';
 
 export function main(window: Window) {
     const picture = new Picture(window);
-    const buffer = fs.readFileSync(path.resolve(__dirname, './Clock#6.png'));
-    const source = ResourceSource.FromBuffer(buffer);
+    const source = ResourceSource.FromFilePath(
+        AppPath.AppPath + '_Debug\\AppRes\\Icon\\Clock#6.png',
+    );
     picture.SetPicture(source);
 
     const container = getControlDemoContainer(window, 1, 300, 300);
@@ -39,17 +38,14 @@ export interface IPicture extends IVisual {
 export class ResourceSource {
     Type: ResourceSourceType = ResourceSourceType.Resource;
     ResourceId: number = 0;
-    InMemory: InMemoryData = new InMemoryData();
+    // path separator must be \\, this is convension of Ave Lib
+    FilePath: string = '';
 
-    static FromBuffer(
-        buffer: Buffer,
-        rowPitch: number = 0,
-        slicePitch: number = 0,
-    );
+    static FromFilePath(s: string): ResourceSource;
 }
 
 export enum ResourceSourceType {
     Resource,
-    InMemory,
+    FilePath,
 }
 ```
