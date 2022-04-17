@@ -173,7 +173,7 @@ window.OnCreateContent((sender) => {
 });
 ```
 
-可以在文字旁边设置一个[图标](icon):
+可以在文字旁边设置一个[图标](icon#introduction):
 
 ![button set icon](./assets/button-set-icon.png)
 
