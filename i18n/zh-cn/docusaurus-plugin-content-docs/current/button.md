@@ -157,25 +157,23 @@ export interface IButton extends IControl {
 
 ### 设置图标 {#example-set-icon}
 
-```ts {7-10}
-import { Window, Button, IconSource, VisualTextLayout } from 'ave-ui';
-import { ResId } from '../ResId';
+> [examples/unit/app/app-resource](https://github.com/qber-soft/Ave-Nodejs/blob/main/Code/Avernakis%20Nodejs/Test-Nodejs/examples/unit/app/app-resource.ts)
 
-export function main(window: Window) {
+```ts {4,6-8}
+window.OnCreateContent((sender) => {
     const button = new Button(window);
     button.SetText('Open');
     button.SetVisualTextLayout(VisualTextLayout.HorzVisualText);
-    button.SetVisual(
-        window.CreateManagedIcon(new IconSource(ResId.Icon_FileOpen_png, 16)),
-    );
 
-    const container = getControlDemoContainer(window);
-    container.ControlAdd(button).SetGrid(1, 1);
-    window.SetContent(container);
-}
+    const iconSource = new IconSource(resMap.Open, 16);
+    const icon = window.CreateManagedIcon(iconSource);
+    button.SetVisual(icon);
+    ...
+    return true;
+});
 ```
 
-可以在文字旁边设置一个图标:
+可以在文字旁边设置一个[图标](icon):
 
 ![button set icon](./assets/button-set-icon.png)
 
