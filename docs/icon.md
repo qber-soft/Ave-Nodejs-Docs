@@ -19,21 +19,33 @@ export class IconSource {
 
 ### Resource ID {#resId}
 
-Before using icon, we should load resource package, which is created using dedicated compile tool.
+Before using icon, we should create resource map, which is created in this way:
 
-`ResId.ts` file will be generated alongside resource package, and each resource is assigned a unique id.
+> [examples/unit/app/app-resource](https://github.com/qber-soft/Ave-Nodejs/blob/main/Code/Avernakis%20Nodejs/Test-Nodejs/examples/unit/app/app-resource.ts)
 
-```ts title=ResId.ts
-export enum ResId {
-    // 126 files in 'Icon'
-    Icon_Clock_png = 0x00000010, // Icon\Clock#0.png
-    Icon_Copy_png = 0x00000020, // Icon\Copy#0.png
-    Icon_Cut_png = 0x00000030, // Icon\Cut#0.png
-    Icon_Delete_png = 0x00000040, // Icon\Delete#0.png
-    Icon_Exit_png = 0x00000050, // Icon\Exit#0.png
-    Icon_File_png = 0x00000060, // Icon\File#0.png
-    ...
-}
+```ts {4}
+const iconDataMap = {
+    Open: [path.resolve(__dirname, './FileOpen#0.png')],
+};
+const resMap = app.CreateResourceMap(
+    app,
+    [16] /* icon size list */,
+    iconDataMap,
+);
 ```
 
-Usage: [Button: Set Icon](/button#example-set-icon)
+then icon can be created using resource id:
+
+```ts {6-8}
+window.OnCreateContent((sender) => {
+    const button = new Button(window);
+    button.SetText('Open');
+    button.SetVisualTextLayout(VisualTextLayout.HorzVisualText);
+
+    const iconSource = new IconSource(resMap.Open, 16);
+    const icon = window.CreateManagedIcon(iconSource);
+    button.SetVisual(icon);
+    ...
+    return true;
+});
+```
