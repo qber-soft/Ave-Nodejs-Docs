@@ -170,7 +170,7 @@ window.OnCreateContent((sender) => {
 });
 ```
 
-You can add [icon](icon) alongside text:
+You can add [icon](icon#introduction) alongside text:
 
 ![button set icon](./assets/button-set-icon.png)
 
