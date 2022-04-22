@@ -194,6 +194,31 @@ Replace code in main, which gives us a basic application with button:
 
 <video src={require('./assets/getting-started-template-project.mp4').default} controls autoplay style={{width: 800}}/>
 
+## Debug {#debug}
+
+Ave app is just node app, so you can debug it as usual. For convenience, we add this [launch config](https://github.com/qber-soft/Ave-Nodejs-Template/blob/main/.vscode/launch.json) in template project:
+
+```json
+{
+    "configurations": [
+        {
+            "name": "Launch",
+            "type": "node",
+            "request": "launch",
+            "args": ["./src/index.ts"],
+            "runtimeArgs": ["--nolazy", "-r", "ts-node/register"],
+            "sourceMaps": true,
+            "cwd": "${workspaceRoot}",
+            "protocol": "inspector"
+        }
+    ]
+}
+```
+
+Set some breakpoints and press `Launch`, you are ready to go:
+
+<video src={require('./assets/vscode-debug.mp4').default} controls autoplay style={{width: 800}}/>
+
 ## Package {#package}
 
 Clone template project and `npm run release`, the output is a single `exe`:
