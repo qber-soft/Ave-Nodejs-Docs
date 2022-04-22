@@ -196,6 +196,31 @@ export function main(window: Window) {
 
 <video src={require('./assets/getting-started-template-project.mp4').default} controls autoplay style={{width: 800}}/>
 
+## 调试 {#debug}
+
+Ave 应用只是普通的 node 应用，所以就像通常那样调试就行了。我们在模板项目中已经添加了 vscode 配置：
+
+```json
+{
+    "configurations": [
+        {
+            "name": "Launch",
+            "type": "node",
+            "request": "launch",
+            "args": ["./src/index.ts"],
+            "runtimeArgs": ["--nolazy", "-r", "ts-node/register"],
+            "sourceMaps": true,
+            "cwd": "${workspaceRoot}",
+            "protocol": "inspector"
+        }
+    ]
+}
+```
+
+这样下好断点，直接点 `Launch` ，就能调了：
+
+<video src={require('./assets/vscode-debug.mp4').default} controls autoplay style={{width: 800}}/>
+
 ## 打包 {#package}
 
 clone 模板项目，然后运行 `npm run release`, 会产出单个 exe 文件:
