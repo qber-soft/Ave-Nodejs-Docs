@@ -28,7 +28,7 @@ This gives us a red rectangle:
 
 ![placeholder basic](./assets/placeholder-basic.png)
 
-Custom UI is achieved with painter API, which is similar to canvas API.
+Custom UI is achieved by painter API, which is similar to canvas API.
 
 #### API {#api-basic}
 
@@ -175,5 +175,45 @@ class Button {
 		this.font = font;
 	}
     ...
+}
+```
+
+#### API {#api-from-button-example}
+
+```ts
+export interface IControl extends IControlExtension {
+    OnPointerEnter(
+        fn: (sender: IControl, mp: MessagePointer) => void,
+    ): IControl;
+    OnPointerLeave(
+        fn: (sender: IControl, mp: MessagePointer) => void,
+    ): IControl;
+    OnPointerPress(
+        fn: (sender: IControl, mp: MessagePointer) => void,
+    ): IControl;
+    OnPointerRelease(
+        fn: (sender: IControl, mp: MessagePointer) => void,
+    ): IControl;
+}
+
+export interface IPainter {
+    SetFillColor(vColor: Vec4): void;
+    FillRoundedRectangle(
+        x: number,
+        y: number,
+        w: number,
+        h: number,
+        rx: number,
+        ry: number,
+    ): void;
+
+    SetTextColor(vColor: Vec4): void;
+    DrawString(
+        pFont: Byo2Font,
+        rc: Rect,
+        s: string,
+        nFlag: DrawTextFlag,
+        nCharCount: number,
+    ): Rect;
 }
 ```
