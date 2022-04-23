@@ -1,6 +1,6 @@
 ---
 id: label
-title: Lable
+title: Label
 ---
 
 ## Examples {#examples}
