@@ -14,7 +14,7 @@ You can find all examples here: [examples/unit](https://github.com/qber-soft/Ave
 ### Fundamental {#fundamental}
 
 <div style={{display:"flex"}}>
-    <a href="./window" style={{display:"flex", flexDirection:"column", alignItems: "center"}}>
+    <a href="/window" style={{display:"flex", flexDirection:"column", alignItems: "center"}}>
         <img src={require('./assets/window-basic.png').default} style={{width: 600}}/>
         <div style={{marginTop: 10}}>Window</div>
     </a>
