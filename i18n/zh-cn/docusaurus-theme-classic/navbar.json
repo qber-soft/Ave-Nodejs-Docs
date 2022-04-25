@@ -10,5 +10,9 @@
     "item.label.Components": {
         "message": "组件",
         "description": "Navbar item with label Components"
+    },
+    "title": {
+        "message": "Avernakis",
+        "description": "The title in the navbar"
     }
 }

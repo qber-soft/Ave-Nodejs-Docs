@@ -10,5 +10,9 @@
     "sidebar.components.category.CommonUi": {
         "message": "CommonUi 公共UI",
         "description": "The label for category CommonUi in sidebar components"
+    },
+    "sidebar.components.category.Event": {
+        "message": "事件",
+        "description": "The label for category Event in sidebar components"
     }
 }
