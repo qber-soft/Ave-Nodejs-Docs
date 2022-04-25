@@ -47,6 +47,12 @@ module.exports = {
             ],
         },
         'custom-component',
+        {
+            type: 'category',
+            label: 'Event',
+            collapsed: true,
+            items: ['keyboard'],
+        },
         'theme',
     ],
 };
