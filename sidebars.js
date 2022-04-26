@@ -47,12 +47,12 @@ module.exports = {
             ],
         },
         'custom-component',
+        'theme',
         {
             type: 'category',
             label: 'Event',
             collapsed: true,
-            items: ['keyboard'],
+            items: ['keyboard', 'mouse'],
         },
-        'theme',
     ],
 };
