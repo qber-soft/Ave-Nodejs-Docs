@@ -51,7 +51,7 @@ module.exports = {
             type: 'category',
             label: 'Event',
             collapsed: true,
-            items: ['keyboard'],
+            items: ['keyboard', 'mouse'],
         },
         'theme',
     ],
