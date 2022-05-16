@@ -55,5 +55,6 @@ module.exports = {
             items: ['keyboard', 'mouse'],
         },
         'clipboard',
+        'i18n',
     ],
 };
