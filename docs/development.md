@@ -6,7 +6,7 @@ title: Development
 ## App
 
 -   Platform: Windows
--   Runtime: Node
+-   Runtime: Node 14.x
 -   Template Project: [Ave-Nodejs-Template](https://github.com/qber-soft/Ave-Nodejs-Template)
 -   Docs: [Components](https://qber-soft.github.io/Ave-Nodejs-Docs/components)
 
